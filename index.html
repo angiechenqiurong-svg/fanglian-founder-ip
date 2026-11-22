@@ -139,6 +139,10 @@
   .exec-metrics div { grid-template-columns: minmax(195px, 23%) minmax(0,1fr); }
   .public-reference { margin: 12px 0; padding-block: 10px; border-block: 1px solid var(--line); }
   .public-script-list { padding-inline-start: 1.4em; }
+  .benchmark-preview { display: block; color: #a92b20; text-underline-offset: 4px; }
+  .benchmark-preview img { border: 1px solid var(--line); }
+  .benchmark-preview span { display: inline-block; margin-top: 6px; font-size: 14px; }
+  .benchmark-preview:focus-visible { outline: 2px solid #a92b20; outline-offset: 3px; }
   @media (max-width: 1060px) {
     nav.desk { gap: 11px; }
     .exec-weeks { grid-template-columns: repeat(2,minmax(0,1fr)); }
@@ -269,11 +273,21 @@
         <article class="bench">
               <p class="signal">01 · 获客</p>
               <h3>平姐讲物流</h3>
+              <a class="benchmark-preview" href="assets/ping-benchmark.png" target="_blank" rel="noopener"
+                 aria-label="查看平姐讲物流对标账号库原图（新标签页）">
+                <img src="assets/ping-benchmark.png" width="2486" height="994" alt="平姐讲物流对标账号库截图">
+                <span>查看原图 ↗</span>
+              </a>
               <p class="public-reference">按墨西哥政策清关、货运价格时效、行业避坑、市场品类整理公开参考。</p>
               <a href="https://www.douyin.com/video/7685680761106521321" target="_blank" rel="noopener noreferrer">拉美小贝 · 墨西哥正清样本 ↗</a>
             </article><article class="bench">
               <p class="signal">02 · 获客</p>
               <h3>蔡枭讲物流</h3>
+              <a class="benchmark-preview" href="assets/cai-benchmark.png" target="_blank" rel="noopener"
+                 aria-label="查看蔡枭讲物流对标账号库原图（新标签页）">
+                <img src="assets/cai-benchmark.png" width="2458" height="814" alt="蔡枭讲物流对标账号库截图">
+                <span>查看原图 ↗</span>
+              </a>
               <p class="public-reference">从公开货代案例看客户怎么问、创始人怎么判断。首月围绕本人确认的业务继续补案例。</p>
               <a href="https://www.douyin.com/video/7707205008474803491" target="_blank" rel="noopener noreferrer">凯琦供应链 · 出口查验样本 ↗</a>
             </article>
