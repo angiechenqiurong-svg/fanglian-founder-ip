@@ -139,18 +139,16 @@
   .exec-metrics div { grid-template-columns: minmax(195px, 23%) minmax(0,1fr); }
   .public-reference { margin: 12px 0; padding-block: 10px; border-block: 1px solid var(--line); }
   .public-script-list { padding-inline-start: 1.4em; }
-  .feishu-preview { display: block; }
-  .feishu-preview img { border: 1px solid var(--line); }
-  .feishu-preview span { display: inline-block; margin-top: 6px; color: #a92b20; }
-  .feishu-preview:focus-visible { outline: 2px solid #a92b20; outline-offset: 3px; }
+  :is(.feishu-preview,.topic-preview) { display: block; }
+  :is(.feishu-preview,.topic-preview) img { border: 1px solid var(--line); }
+  :is(.feishu-preview,.topic-preview) span { display: inline-block; margin-top: 6px; color: #a92b20; }
+  :is(.feishu-preview,.topic-preview):focus-visible { outline: 2px solid #a92b20; outline-offset: 3px; }
   #topics .benches { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .topic-samples { list-style: none; margin: 2px 0 0; padding: 0; }
   .topic-samples li { border-top: 1px solid var(--line); padding: 14px 0; }
   .topic-samples li:last-child { padding-bottom: 0; }
-  .topic-samples p { margin: 5px 0; }
+  .topic-samples strong { display: block; margin-bottom: 3px; }
   .topic-samples a { text-underline-offset: 3px; }
-  .topic-samples small { display: block; margin-top: 4px; color: var(--muted); }
-  .topic-tiger { margin: 18px 0 0; color: var(--muted); }
   @media (max-width: 760px) {
     #topics .benches { grid-template-columns: minmax(0,1fr); }
   }
@@ -310,64 +308,59 @@
   <section id="topics" aria-labelledby="topics-title">
     <div class="wrap">
       <h2 id="topics-title">选题来源</h2>
-      <p>从对标账号库的样本内 Top 3 选作品，提炼开头和讲法，再换成创始人能讲的场景。排名和点赞取自各账号的采样记录。</p>
+      <p>摘自对标账号库的「栏目与选题」。按竞品账号查看原有栏目和代表作品，点击截图可看大图。</p>
       <div class="benches">
         <article class="bench">
-          <h3>平姐讲物流</h3>
-          <a class="feishu-preview" href="https://my.feishu.cn/base/P2ZsblIObaZGWTsMXkccv8janDc?table=tblzeCO01MZyDFzf&amp;view=vewGIBmfp6" target="_blank" rel="noopener noreferrer">
-            <img src="assets/ping-benchmark.png" width="2486" height="994" alt="平姐讲物流对标账号库截图">
-            <span>查看平姐讲物流对标账号库 ↗</span>
+          <h3>北美货代加敏</h3>
+          <a class="topic-preview" href="assets/jiamin-topic-columns.png" target="_blank" rel="noopener noreferrer">
+            <img src="assets/jiamin-topic-columns.png" width="1742" height="920" alt="北美货代加敏的栏目与选题截图">
+            <span>查看栏目与选题截图 ↗</span>
           </a>
           <ul class="topic-samples">
             <li>
-              <strong>墨西哥清关，出货前先对哪些资料？</strong>
-              <p>借政策变化带出具体动作，用一票货的资料讲清发货前该对什么。</p>
-              <a href="https://www.douyin.com/note/7629180478503527419" target="_blank" rel="noopener noreferrer">墨西哥正清VV · 拉美合规全面收紧 ↗</a>
-              <small>21 条样本第 2 · 87 赞</small>
+              <strong>清关合规与 IOR 风险</strong>
+              <a href="https://www.douyin.com/video/7702010510418176118" target="_blank" rel="noopener noreferrer">IOR 被作废之后，货会怎样？</a>
             </li>
             <li>
-              <strong>第一批货进墨西哥海外仓，怎么发才好补货？</strong>
-              <p>借库存周转的切口，用仓租、补货时间和订单量讲首批备货。</p>
-              <a href="https://www.douyin.com/video/7676042154569569235" target="_blank" rel="noopener noreferrer">拉美小贝 · 墨西哥海外仓与库存周转 ↗</a>
-              <small>18 条样本第 2 · 40 赞</small>
+              <strong>美线事件、成本与政策</strong>
+              <a href="https://www.douyin.com/video/7696831293409728681" target="_blank" rel="noopener noreferrer">11 月 9 日，美线可能又要涨价了！这次是因为什么？</a>
             </li>
             <li>
-              <strong>美客多有新消息，卖家发货前先查什么？</strong>
-              <p>用平台消息切入，从卖家会遇到的发货问题讲起，拍摄前核对公告和适用范围。</p>
-              <a href="https://www.douyin.com/video/7701288230703908539" target="_blank" rel="noopener noreferrer">龙哥聊拉美 · 美客多新政策卖家要小心 ↗</a>
-              <small>20 条样本第 3 · 280 赞</small>
+              <strong>出货动作与 DDP 方案</strong>
+              <a href="https://www.douyin.com/video/7698286953389326313" target="_blank" rel="noopener noreferrer">美国出货，现在必须要做 3 件！</a>
+            </li>
+            <li>
+              <strong>一线见闻与真心话</strong>
+              <a href="https://www.douyin.com/video/7710191697711713130" target="_blank" rel="noopener noreferrer">今天不讲政策，不讲干货，聊聊我的心里话</a>
             </li>
           </ul>
         </article>
         <article class="bench">
-          <h3>蔡枭讲物流</h3>
-          <a class="feishu-preview" href="https://my.feishu.cn/base/P2ZsblIObaZGWTsMXkccv8janDc?from=from_copylink" target="_blank" rel="noopener noreferrer">
-            <img src="assets/cai-benchmark.png" width="2458" height="814" alt="蔡枭讲物流对标账号库截图">
-            <span>查看蔡枭讲物流对标账号库 ↗</span>
+          <h3>货代老王</h3>
+          <a class="topic-preview" href="assets/laowang-topic-columns.png" target="_blank" rel="noopener noreferrer">
+            <img src="assets/laowang-topic-columns.png" width="1966" height="954" alt="货代老王的栏目与选题截图">
+            <span>查看栏目与选题截图 ↗</span>
           </a>
           <ul class="topic-samples">
             <li>
-              <strong>客户着急发墨西哥，这票货我为什么先不接？</strong>
-              <p>借拒单开头，用客户和老板的对话交代货物情况、拒单原因和下一步。</p>
-              <a href="https://www.douyin.com/video/7683811401294482742" target="_blank" rel="noopener noreferrer">货代老杰不带哥 · 北部湾兄弟不接这单 ↗</a>
-              <small>19 条样本第 1 · 6,439 赞</small>
+              <strong>清关避坑与合规</strong>
+              <a href="https://www.xiaohongshu.com/explore/6985606c000000001a02798e" target="_blank" rel="noopener noreferrer">春运集装箱，没有经验的必进坑</a>
             </li>
             <li>
-              <strong>跟我走一趟仓库，看看货到了还要过几道手。</strong>
-              <p>借地域现场的拍法，从仓库收货拍到交接，每到一个点讲谁接手。</p>
-              <a href="https://www.douyin.com/video/7706816322566393114" target="_blank" rel="noopener noreferrer">跨境老樊 · 芝加哥尾段市场观察 ↗</a>
-              <small>18 条样本第 2 · 104 赞</small>
+              <strong>欧洲大件与拼箱</strong>
+              <a href="https://www.xiaohongshu.com/explore/6986ba09000000000d0099f3" target="_blank" rel="noopener noreferrer">以现场为课堂，欧洲大件海运拼箱双清实践总结</a>
             </li>
             <li>
-              <strong>客户想发一整柜，我为什么问他能不能少发点？</strong>
-              <p>借老板先说一个意外决定的开头，用情景对话带出订单、仓租和补货时间。</p>
-              <a href="https://www.douyin.com/video/7707604635971865866" target="_blank" rel="noopener noreferrer">跨境老冯 · 我是一个“不爱批假”的老板 ↗</a>
-              <small>20 条样本第 2 · 842 赞</small>
+              <strong>货代人设与幕后</strong>
+              <a href="https://www.xiaohongshu.com/explore/6969be3e000000000d00aa20" target="_blank" rel="noopener noreferrer">用了 120 分钟写的文案，20 分钟的拍摄，15 分钟的剪辑</a>
+            </li>
+            <li>
+              <strong>行业观点与冲突</strong>
+              <a href="https://www.xiaohongshu.com/explore/696f0356000000001a02eaab" target="_blank" rel="noopener noreferrer">没有负债没有贷款，小本生意稳扎稳打</a>
             </li>
           </ul>
         </article>
       </div>
-      <p class="topic-tiger"><strong>镖局 Tiger</strong> 的选题来源在创始人访谈确认方向后补充。</p>
     </div>
   </section>
 
