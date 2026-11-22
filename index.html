@@ -225,21 +225,24 @@
     h2 { font-size: 23pt; }
     .bench h3, .review-accounts h3, .cell h3 { font-size: 16pt; }
     .wrap { width: 100%; }
-    .plates, #position .three, .review-accounts { grid-template-columns: repeat(3,minmax(0,1fr)); }
-    #topics .benches, .script-benches { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .plates { grid-template-columns: repeat(3,minmax(0,1fr)); }
+    #position .three, .review-accounts, #topics .benches, .script-benches { display: block; background: transparent; }
+    #position .cell + .cell, .review-accounts .cell + .cell, .benches .bench + .bench { margin-top: 10px; }
+    .four { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; background: transparent; }
     .plate, .bench, .cell { padding: 10px; }
     .avatar-link { margin-top: 12px; }
     .avatar-link img { width: 72px; height: 72px; }
     .plate .detail { padding-top: 10px; }
     .plate .role, .loop b, .node { background: none; color: var(--ink); }
     section { break-inside: auto; }
-    #position, #review { break-before: page; }
+    #position { break-before: page; }
+    .exec { break-before: auto; }
     #position .point { padding: 5px 0; }
     #position .point p, #position .point ol, #position .point li { margin-block: 3px; }
     #position .examples { gap: 3px; }
     #position .examples li { padding: 3px 5px; }
     h1, h2, h3, caption { break-after: avoid; }
-    #cases, #position .three, .review-accounts, .benches, .mini, .four, .cell, .plate, .review-points > div, .topic-samples li, .public-script-list li, tr { break-inside: avoid; }
+    #cases, .mini, .bench, .cell, .plate, .four > li, .review-points > div, .topic-samples li, .public-script-list li, tr { break-inside: avoid; }
     .mini thead { display: table-header-group; }
   }
 </style>
